@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
  const BASE_URL = "https://task-manager-iota-five-73.vercel.app";
+// const BASE_URL = "http://localhost:3000";
 
 const DailySummary = () => {
   const [summary, setSummary] = useState(null);
