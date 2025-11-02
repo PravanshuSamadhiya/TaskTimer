@@ -10,7 +10,7 @@ if (!process.env.GEMINI_API_KEY) {
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 export const generateTaskDetails = async (userInput) => {
-  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+  const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
   const prompt = `
   You are a helpful productivity assistant. Based on the following user input, respond ONLY with a valid JSON object with these two fields:
